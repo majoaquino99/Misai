@@ -1,9 +1,14 @@
 import React from 'react';
 
-const CategoriesList = () => {
+const CategoriesList = ({mockCategories}) => {
 	return (
 		<div>
-			<p> Soy Categories List </p>
+			<ul>
+				{mockCategories.map(category => (
+				<li key={category.description}>{category.description}</li>
+				))}
+			</ul>
+
 		</div>
 	);
 }
