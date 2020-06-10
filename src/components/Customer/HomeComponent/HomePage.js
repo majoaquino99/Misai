@@ -3,7 +3,9 @@ import HeaderCustomer from '../HeaderCustomer';
 import ProductsList from '../ProductsComponent/ProductsList';
 import CategoriesList from '../CategoriesComponent/CategoriesList';
 import PromotionsList from '../PromotionsComponent/PromotionsList';
+import DetailedProduct from '../DetailedProductComponent/DetailedProduct'
 import {  makeStyles }  from '@material-ui/core/styles';
+import productById from '../DetailedProductComponent/productId'
 
 //view promotions and categories
 //view lista de productos
@@ -30,10 +32,11 @@ const HomePage = () => {
             {view === 0 
             ? 
             (  
-                <div style={{marginTop: "200px"}}> 
+                <div style={{marginTop: "140px"}}> 
                 {/* Aqui pueden moverle pa ver sus componentes */}
-                <PromotionsList/>
-                <CategoriesList />
+                <DetailedProduct productById={productById}/>
+                {/* <PromotionsList/>
+                <CategoriesList /> */}
                
                 </div>
             ) : null}
