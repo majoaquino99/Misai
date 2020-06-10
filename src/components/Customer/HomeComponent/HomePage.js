@@ -7,7 +7,7 @@ import {  makeStyles }  from '@material-ui/core/styles';
 
 //view promotions and categories
 //view lista de productos
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
 	Page: {
 		display: 'flex',
 		flexDirection: 'column',
@@ -17,24 +17,24 @@ const HomePage = () => {
     const classes = useStyles();
     const [view, setView] = useState(0);
 
-    const handleChangeState = () => {
+  /*   const handleChangeState = () => {
         setView(1)
     }
-
+ */
 
     return(
         <div className= {classes.Page}>
-       
-            <HeaderCustomer/>  
+
+            <HeaderCustomer/>
             <div>
-            {view === 0 
-            ? 
-            (  
-                <div style={{marginTop: "200px"}}> 
+            {view === 0
+            ?
+            (
+                <div style={{marginTop: "200px"}}>
                 {/* Aqui pueden moverle pa ver sus componentes */}
                 <PromotionsList/>
                 <CategoriesList />
-               
+
                 </div>
             ) : null}
             {view === 1
