@@ -3,9 +3,12 @@ import HeaderCustomer from '../HeaderCustomer';
 import ProductsList from '../ProductsComponent/ProductsList';
 import CategoriesList from '../CategoriesComponent/CategoriesList';
 import PromotionsList from '../PromotionsComponent/PromotionsList';
+import DetailedProduct from '../DetailedProductComponent/DetailedProduct'
 import {  makeStyles }  from '@material-ui/core/styles';
 import  mockCategories  from '../mockCategories';
 import mockPromotions from '../mockPromotions';
+import productById from '../DetailedProductComponent/productId'
+
 //view promotions and categories
 //view lista de productos
 const useStyles = makeStyles(() => ({
@@ -44,7 +47,7 @@ const HomePage = () => {
                 {/* Aqui pueden moverle pa ver sus componentes */}
                 <PromotionsList mockPromotions={mockPromotions}/>
                 <CategoriesList mockCategories={mockCategories}/>
-
+                <DetailedProduct productById={productById}/>           
                 </div>
             ) : null}
             {view === 1
