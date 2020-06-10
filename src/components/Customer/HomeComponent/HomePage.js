@@ -32,7 +32,7 @@ const HomePage = () => {
             {view === 0 
             ? 
             (  
-                <div style={{marginTop: "200px"}}> 
+                <div style={{marginTop: "120px"}}> 
                 {/* Aqui pueden moverle pa ver sus componentes */}
                 <DetailedProduct productById={productById}/>
                 {/* <PromotionsList/>

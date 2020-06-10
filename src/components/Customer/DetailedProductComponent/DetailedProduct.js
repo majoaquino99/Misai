@@ -5,13 +5,11 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import {  makeStyles }  from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
-import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import NativeSelect from '@material-ui/core/NativeSelect';
 import Button from '@material-ui/core/Button';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-
+import FacebookIcon from '@material-ui/icons/Facebook';
 
 const useStyles = makeStyles((theme) => ({
 	Container: {
@@ -19,32 +17,45 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    backgroundColor: '#cfe8fc',
     height: '70vh',
     width:'100vh'
     },
     text:{
-      margin: "4px"
+      margin: "1em"
     },
     divImg:{
       display: 'flex',
       flexDirection: 'Column',
-      backgroundColor: '#cfe8fc',
+      alignItems: 'center',
       height: '60vh',
       width:'40vh',
-      border: '2px solid #C8A79C'
+     
     },
     divDetails:{
       display: 'flex',
       flexDirection: 'Column',
       alignItems: 'center',
-      border: '2px solid #C8A79C',
     },
     formControl: {
+      '& label.Mui-focused': {
+        color: '#C8A79C',
+      },
+      '& .MuiInput-underline:after': {
+        borderBottomColor: '#C8A79C',
+      },
+      '& .MuiOutlinedInput-root': {
+        '& fieldset': {
+          borderColor: '#C8A79C',
+        },
+        '&:hover fieldset': {
+          borderColor: '#C8A79C',
+        },
+        '&.Mui-focused fieldset': {
+          borderColor: '#C8A79C',
+        },
+      },
       margin: theme.spacing(1),
       minWidth: 120,
-      color: "#C8A79C",
-      border: ' #C8A79C',
       marginTop:"20px"
       
     },
@@ -53,29 +64,20 @@ const useStyles = makeStyles((theme) => ({
       color: "#C8A79C",
       border: ' #C8A79C',
     },
-    select:{
-       border: '#C8A79C',
-      color: "#C8A79C",
-      '&:hover': {	
-        border:"2px solid #cccccc",
-        color:"black"
-    }
-  },
     btn:{
-      margin: "2px",
+      margin: "10px",
       color: "black",
       '&:hover': {	
-        border:"2px solid #C8A79C",
+        border:"1px solid black",
         color:"black"}
-    }
+    },
   
 }));
 
 const DetailedProduct = ({productById}) => {
   const classes = useStyles();
-    //  console.log(productById)
-    // console.log(productId[0])
-    // console.log(productId[0].description)
+
+  //State selector
     const [state, setState] = React.useState({
       cant: '',
       total: 'hai',
@@ -95,8 +97,11 @@ const DetailedProduct = ({productById}) => {
         <React.Fragment>
         <CssBaseline />
         <Container className={classes.Container} maxWidth="sm" >
-        <div className={classes.divImg}> Aqui la foto
+        <div className={classes.divImg}> 
+        <img src={productById.picture} alt='Logo Misai' width={250}/>
         {/* <img src={productById.ById.picture}  width={200} />*/}
+        <Typography className={classes.text} variant="subtitle1" > Share with :</Typography>
+        <Button> <FacebookIcon style={{ fontSize: 30 }} /> </Button>
         </div> 
         <div className={classes.divDetails}> 
         <Typography className={classes.text} variant="h5" > {productById.description} </Typography>
