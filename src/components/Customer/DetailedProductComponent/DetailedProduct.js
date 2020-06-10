@@ -10,7 +10,8 @@ import Select from '@material-ui/core/Select';
 import Button from '@material-ui/core/Button';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import FacebookIcon from '@material-ui/icons/Facebook';
-
+import PinterestIcon from '@material-ui/icons/Pinterest';
+import {  FacebookShareButton, PinterestShareButton, } from "react-share";
 const useStyles = makeStyles((theme) => ({
 	Container: {
 		display: 'flex',
@@ -95,13 +96,16 @@ const DetailedProduct = ({productById}) => {
     
     return(
         <React.Fragment>
+        <button> back</button>
         <CssBaseline />
         <Container className={classes.Container} maxWidth="sm" >
         <div className={classes.divImg}> 
         <img src={productById.picture} alt='Logo Misai' width={250}/>
-        {/* <img src={productById.ById.picture}  width={200} />*/}
-        <Typography className={classes.text} variant="subtitle1" > Share with :</Typography>
-        <Button> <FacebookIcon style={{ fontSize: 30 }} /> </Button>
+        <div>
+        <Typography  variant="subtitle1" > Share with :</Typography>
+        <Button > <FacebookIcon style={{ fontSize: 30 }} /> </Button>
+        <Button > <PinterestIcon style={{ fontSize: 30 }} /> </Button>
+        </div>
         </div> 
         <div className={classes.divDetails}> 
         <Typography className={classes.text} variant="h5" > {productById.description} </Typography>

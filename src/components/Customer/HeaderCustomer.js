@@ -103,7 +103,7 @@ const HeaderCustomer = () => {
 		<div className={classes.header} >
 			<AppBar className={classes.nav}>
 				<Toolbar className={classes.bar}>
-					<img src={logo} alt='Logo Misai' width={100} />
+					<img src={logo} alt='Logo Misai' width={150} />
 					 <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
