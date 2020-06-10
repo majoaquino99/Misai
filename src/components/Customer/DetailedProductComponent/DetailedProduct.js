@@ -1,0 +1,1 @@
+//Monse, detailed product component
