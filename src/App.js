@@ -1,17 +1,20 @@
 import React from 'react';
 import './index.css';
-import logo from './assets/images/Logo-Misai.svg';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from './views/Home'
+import Admin from './views/Admin'
+//import PrivateRoute from "./privateRoute/PrivateRoute"
+
 
 function App() {
 	return (
-		<div className="App">
-			<img src={logo} alt='Logo Misai' width={500} />
-			<h1>Hacking Challenge </h1>
-			<p>
-				Boutique, Fashion & Clothes
-				Digital Retail challenge
-			</p>
-		</div>
+
+    <Router>
+        {/* <PrivateRoute exact path="/Admin" component ={Admin}/> */}
+        <Route exact path="/Admin" component ={Admin}/>
+        <Route exact path="/" component ={Home}/>
+    </Router>  
+		
 	);
 }
 
