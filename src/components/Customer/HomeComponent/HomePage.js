@@ -27,25 +27,6 @@ const HomePage = () => {
     return(
         <div className= {classes.Page}>
        
-            <HeaderCustomer/>  
-            <div>
-            {view === 0 
-            ? 
-            (  
-                <div style={{marginTop: "140px"}}> 
-                {/* Aqui pueden moverle pa ver sus componentes */}
-                <DetailedProduct productById={productById}/>
-                {/* <PromotionsList/>
-                <CategoriesList /> */}
-               
-                </div>
-            ) : null}
-            {view === 1
-            ?
-            (
-                <ProductsList/>
-            ) : null}
-            </div>
         </div>
     )
 
