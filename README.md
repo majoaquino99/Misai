@@ -34,6 +34,10 @@ The objectives that we want to realize with the startup is:
 
 
 ## 3. Planning Overview
+
+###We started taking the requirements that the Product Owner  gave us in the Kick off and have the security to understand all the requirements and create the best web app for this startup.
+
+
 ## 4. User Stories
 ## 5. Prototypes
 ## 6. Finished product
