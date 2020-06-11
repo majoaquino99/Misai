@@ -49,11 +49,44 @@ The objectives that we want to realize with the startup is:
 
 ![files_architecture](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/arquitectura_archivos.png)
 
-
+![trello_work](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/trello_work.png)
 
 
 ## 4. User Stories
+
+After we have taken the requirements, we divide the work in create user stories and create the prototype (Results in point 5) collaborating each one to consider and cover all the important things in the solution.
+
+Here is the list of our user stories: 
+
+* As a customer i want to be able to identify myself through the brand.
+* As a customer i want to be able to see the promotions.
+* As a customer i want to be able to share a product.
+* As a customer i want to  be able to see the categories/ filter by gender/ garment/ product characteristics.
+* As a customer i need a product search.
+* As a customer i need to be able to see all the options in the categories i chose.
+* As a client i need to able to see the products of the categories that i chose
+* As a customer i need to see the detail of the product (size, opinions, colors, price, description).
+* As a customer i need to be able to add my purchase to the cart.  
+* As a customer i need to be able to return to the categories / filtering.
+* As a customer i need to be able to purchase the products from the cart.
+* As a user (admin) i need to be able to enter with an account and password.
+* As a user (admin) i want to be able to welcome the page.
+* As a user (admin) i need to be able to add/ edit/ delete promotions.
+* As a user (admin) i need to be able to add/ edit/ delete a category.
+* As a user (admin) i need to be able to add/ edit/ delete a product
+* As a user (admin) i need to be able to see the analytics of my page.
+
+We consider 2 types os users for the requirements and scalation that the web app has. 
+
+We have the final user that he / she would buy our products and share with friends to recommend the brand.
+
+And the admin user that he / she would manage and administrate the web app. The admin could edit, delete and add products, categories, and promotions. 
+
+Thinking to have more results on the next iterations we are adding the analytics to see all the views and shares from the users.
+
+
 ## 5. Prototypes
+
 ## 6. Finished product
 ## 7. Authors
 ## 8. Acknowledgements
