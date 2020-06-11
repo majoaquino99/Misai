@@ -48,7 +48,7 @@ const ProductsList = ({productsList, handleDetailedProduct, goBack}) => {
           title="img"
         />
         <CardContent>
-          <Typography gutterBottom variant="h7" component="h2">
+          <Typography gutterBottom variant="subtitle1" component="h2">
              ${data.price}
              <Button className={classes.btn} value={data.productId} onClick={handleDetailedProduct}>
          View
