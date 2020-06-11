@@ -1,4 +1,5 @@
 //Don't add any code here. At the end, this file will be deleted.
+//file to test API on console
 import React from 'react';
 import '../index.css';
 import useCategories from '../controller/useCategories';

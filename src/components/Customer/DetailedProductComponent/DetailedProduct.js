@@ -74,13 +74,14 @@ const useStyles = makeStyles((theme) => ({
     },  
 }));
 
-const DetailedProduct = ({productById, goBack}) => {
+const DetailedProduct = ({productById}) => {
   const classes = useStyles();
   
   const [state, setState] = React.useState({
     quantity: '',
     name: 'hai',
   });
+
 
   const handleChange = (event) => {
     const name = event.target.name;
@@ -139,6 +140,7 @@ const DetailedProduct = ({productById, goBack}) => {
           </div>
         </Container>
       </React.Fragment>
+
     )
 
 };
