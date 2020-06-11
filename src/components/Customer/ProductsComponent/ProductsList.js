@@ -31,14 +31,14 @@ const useStyles = makeStyles({
 
 });
 
-const ProductsList = ({productsListByCategory, handleDetailedProduct, goBack }) => {
+const ProductsList = ({productsList, handleDetailedProduct, goBack}) => {
     const classes = useStyles();
 
-	const products = productsListByCategory;
+	const products = productsList;
 
 	const data = products.map((data) =>
 
-    <Card className={classes.root}>
+    <Card key ={data.productId} className={classes.root}>
         <CardMedia
           component="img"
           alt="img"
@@ -49,7 +49,7 @@ const ProductsList = ({productsListByCategory, handleDetailedProduct, goBack }) 
         />
         <CardContent>
           <Typography gutterBottom variant="h7" component="h2">
-             {data.price}
+             ${data.price}
              <Button className={classes.btn} value={data.productId} onClick={handleDetailedProduct}>
          View
         </Button>
