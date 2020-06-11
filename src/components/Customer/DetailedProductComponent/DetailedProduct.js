@@ -68,13 +68,13 @@ const useStyles = makeStyles((theme) => ({
     btn:{
       margin: "10px",
       color: "black",
-      '&:hover': {	
+      '&:hover': {
         border:"1px solid black",
         color:"black"}
     },  
 }));
 
-const DetailedProduct = ({productById}) => {
+const DetailedProduct = ({productById, goBack}) => {
   const classes = useStyles();
   
   const [state, setState] = React.useState({
@@ -141,8 +141,8 @@ const DetailedProduct = ({productById}) => {
         </Button>
       
 
-        </div>
-       </Container>
+			</div>
+		</Container>
       </React.Fragment>
     )
 

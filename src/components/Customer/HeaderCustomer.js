@@ -19,14 +19,14 @@ const useStyles = makeStyles((theme) => ({
 		background:"#ffffff",
 		borderBottomStyle:"solid",
 		borderBottomColor:"#C8A79C",
-		borderBottomWidth:"8px",		
+		borderBottomWidth:"8px",
 	},
 	img: {
-		marginRight: theme.spacing(1),	
+		marginRight: theme.spacing(1),
 	},
 	bar:{
 		display: "flex",
-		flexDirection: "row",	 
+		flexDirection: "row",
 		justifyContent: 'space-between',
 	},
 	button2:{
@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
 		},
 	links:{
 		display: "flex",
-		flexDirection: "row",	 
+		flexDirection: "row",
 		justifyContent: 'center',
 	},
 	search: {
@@ -63,9 +63,9 @@ const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.up('sm')]: {
 			marginLeft: theme.spacing(1),
 			width: '20%',
-			
+
 		},
-	},  
+	},
 	searchIcon: {
 		padding: theme.spacing(0, 2),
 		height: '100%',
@@ -76,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
 		justifyContent: 'center',
 		color:"black"
 	  },
-	  
+
 	inputInput: {
 		padding: theme.spacing(1, 1, 1, 0),
 		paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
@@ -89,15 +89,15 @@ const useStyles = makeStyles((theme) => ({
 			width: '20ch',
 			},
 		},
-		'&:hover': {	
+		'&:hover': {
 			border:"1px solid #cccccc",
 			color:"black",
 		},
 	},
 }));
 
-const HeaderCustomer = () => {
-	const classes = useStyles();	
+const HeaderCustomer = ({categoriesSection, handleShowProducts}) => {
+	const classes = useStyles();
 
 	return (
 		<div className={classes.header} >
@@ -119,32 +119,25 @@ const HeaderCustomer = () => {
           </div>
 					<div>
 						<Button> <ShoppingCartIcon style={{ fontSize: 30 }} /> </Button>
-						<Button   className={classes.button}>Admin </Button>
+						<Button  className={classes.button}>Admin </Button>
 					</div>
 				</Toolbar>
 				<Toolbar className={classes.links}>
-					<Button className={classes.button2} > 
+					<Button className={classes.button2} >
 						<LabelIcon/> All discount
 					</Button>
-                    <form>				
-                        <Button  type="submit" className={classes.button} >
-                            WOMAN 
-                        </Button> 
-                        <Button  type="submit" className={classes.button} >
-                            Hand Bags
+                    <form>
+					{categoriesSection.map(category => (
+						<Button
+						 className={classes.button}
+						 key={category.description}
+						 onClick={handleShowProducts}
+						 value= {category.categoryId}
+						 type="submit"
+						 >
+                            {category.description}
                         </Button>
-                        <Button  type="submit" className={classes.button} >
-                            Shoes
-                        </Button>
-                             <Button  type="submit" className={classes.button} >
-                            Jewerly & accesories
-                        </Button>
-                        <Button  type="submit" className={classes.button} >
-                            Kids
-                        </Button>
-                        <Button  type="submit" className={classes.button} >
-                            Home
-                        </Button>
+				))}
                     </form>
 				</Toolbar>
 			</AppBar>
