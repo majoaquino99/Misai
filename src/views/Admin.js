@@ -1,14 +1,13 @@
 import React from 'react';
-import HeaderAdmin from '../components/Admin/HeaderAdmin'
-
+import LandingPage from '../components/Admin/LandingComponent/LandingPage';
 
 
 function Admin() {
 	return (
 		<>
-		<HeaderAdmin/>
+		<LandingPage/>
 		</>
 	);
 }
 
-export default Admin;
+export default Admin; 
