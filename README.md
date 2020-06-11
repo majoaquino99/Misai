@@ -20,7 +20,7 @@ Nowadays with the pandemic for covid-19 the form to buy everything it has change
 Our task is put all the creativity and knowledge to create a web app where the users can see, purchase and share the products that this fabulous startup wants to share with the people and say that they have the best option to buy in the pandemic.
 
 Let's present:
-[Misai_logo]![https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/misailogo.jpg]
+![Misai_logo][https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/misailogo.jpg]
 
 ## 2. Objectives
 
