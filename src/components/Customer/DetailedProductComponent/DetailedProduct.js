@@ -77,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-const DetailedProduct = ({productById, goBack}) => {
+const DetailedProduct = ({productById}) => {
   const classes = useStyles();
 
   	//State selector
@@ -98,7 +98,6 @@ const DetailedProduct = ({productById, goBack}) => {
 
     return(
 		<React.Fragment>
-		<Button onClick={goBack} className={classes.btn} style={{marginTop: "20px"}}> <ArrowBackIosIcon style={{ fontSize: 15 }}/> back </Button>
 		<CssBaseline />
 			<Container className={classes.Container} maxWidth="sm" >
 				<div className={classes.divImg}>
