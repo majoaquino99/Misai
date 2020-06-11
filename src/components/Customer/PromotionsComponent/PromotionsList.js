@@ -10,8 +10,11 @@ const PromotionsList = ({promotionsSection}) => {
 	}
 	return (
 		<div>
-			<Carousel showThumbs={false}  infiniteLoop
-        centerMode >
+			<Carousel
+				centerMode
+				infiniteLoop
+				showThumbs={false}>
+
 				{promotionsSection.map(promotion => (
 					<div key={promotion.promotionID} >
 						<img

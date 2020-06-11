@@ -10,6 +10,7 @@ import Button from '@material-ui/core/Button';
 // on the value received by categories
 // You need to create an infinite scroll grid including 5-6 products on each row
 // Condition the image size to be the same for each one
+
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
@@ -31,7 +32,7 @@ const useStyles = makeStyles({
 
 });
 
-const ProductsList = ({productsList, handleDetailedProduct, goBack}) => {
+const ProductsList = ({productsList, handleDetailedProduct}) => {
     const classes = useStyles();
 
 	const products = productsList;
