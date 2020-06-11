@@ -20,9 +20,17 @@ Nowadays with the pandemic for covid-19 the form to buy everything it has change
 Our task is put all the creativity and knowledge to create a web app where the users can see, purchase and share the products that this fabulous startup wants to share with the people and say that they have the best option to buy in the pandemic.
 
 Let's present:
+
 ![Misai_logo](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/misailogo.jpg)
 
 ## 2. Objectives
+
+The objectives that we want to realize with the startup is:
+
+* Create opportunities for the user, to buy clothes in a single way, in a few time.
+* Meet priority needs, create relations with the customers
+* The users feel identified with the brand.
+* And reduce the time decide the purchase that we see when the users go to a store in live.
 
 
 ## 3. Planning Overview
