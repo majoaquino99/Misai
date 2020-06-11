@@ -2,7 +2,7 @@ import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
-const PromotionsList = ({mockPromotions}) => {
+const PromotionsList = ({promotionsSection}) => {
 	const style = {
 		height:'400px',
 		width: 'auto',
@@ -12,7 +12,7 @@ const PromotionsList = ({mockPromotions}) => {
 		<div>
 			<Carousel showThumbs={false}  infiniteLoop
         centerMode >
-				{mockPromotions.map(promotion => (
+				{promotionsSection.map(promotion => (
 					<div key={promotion.promotionID} >
 						<img
 						alt={promotion.description}

@@ -96,7 +96,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-const HeaderCustomer = ({mockCategories, handleShowProducts}) => {
+const HeaderCustomer = ({categoriesSection, handleShowProducts}) => {
 	const classes = useStyles();
 
 	return (
@@ -127,7 +127,7 @@ const HeaderCustomer = ({mockCategories, handleShowProducts}) => {
 						<LabelIcon/> All discount
 					</Button>
                     <form>
-					{mockCategories.map(category => (
+					{categoriesSection.map(category => (
 						<Button
 						 className={classes.button}
 						 key={category.description}

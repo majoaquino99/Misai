@@ -7,10 +7,10 @@ const useProductById = (productId) => {
 
     useEffect(() => {
         const fetchDataProductById = () => {
-            const getProductByIdAPI = `https://genericapiv1.azurewebsites.net/v1/shop/products/${productId}`;    
+            const getProductByIdAPI = `https://genericapiv1.azurewebsites.net/v1/shop/products/${productId}`;
             const getProductById = axios.get(getProductByIdAPI)
             axios.all([getProductById])
-                .then(axios.spread((...allData) => {                    
+                .then(axios.spread((...allData) => {
                     setProduct(allData[0].data)
                 })
                 ).catch((e) => {
@@ -18,7 +18,7 @@ const useProductById = (productId) => {
                 })
         }
         fetchDataProductById()
-    }, [], productId)
+    }, [productId] )
 
     return {
         product,
