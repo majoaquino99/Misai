@@ -35,7 +35,21 @@ The objectives that we want to realize with the startup is:
 
 ## 3. Planning Overview
 
-###We started taking the requirements that the Product Owner  gave us in the Kick off and have the security to understand all the requirements and create the best web app for this startup.
+#### We started taking the requirements that the Product Owner  gave us in the Kick off and have the security to understand all the requirements and create the best web app for this startup.
+
+![tools_organization](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/tools_organization.png)
+
+#### For the solution that we propose we use different tools and programming languages, libraries and frameworks to create great communication, great designs and great web for a great startup.
+
+#### Our organization in development was in this form:
+
+![work_development](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/arquitectura_trabajo.png)
+
+#### The organization of our files into the repository take this form, using React and React hooks, creating components and using the API gave it for our partner Nagarro.
+
+![files_architecture](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/arquitectura_archivos.png)
+
+
 
 
 ## 4. User Stories
