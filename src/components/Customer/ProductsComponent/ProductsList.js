@@ -1,13 +1,12 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
-// Products Component receives an object with Image, price, and Description depending 
+// Products Component receives an object with Image, price, and Description depending
 // on the value received by categories
 // You need to create an infinite scroll grid including 5-6 products on each row
 // Condition the image size to be the same for each one
@@ -24,7 +23,7 @@ const useStyles = makeStyles({
   btn:{
       margin: "10px",
       color: "black",
-      '&:hover': {	
+      '&:hover': {
         border:"1px solid black",
         color:"black"}
     },
@@ -32,13 +31,14 @@ const useStyles = makeStyles({
 
 });
 
-const ProductsList = ({productsListByCategory}) => {
+const ProductsList = ({productsListByCategory, handleDetailedProduct, goBack }) => {
     const classes = useStyles();
-    
-    const products = productsListByCategory;
 
-    const data = products.map((data) => 
-    <Card className={classes.root}> 
+	const products = productsListByCategory;
+
+	const data = products.map((data) =>
+
+    <Card className={classes.root}>
         <CardMedia
           component="img"
           alt="img"
@@ -49,18 +49,18 @@ const ProductsList = ({productsListByCategory}) => {
         />
         <CardContent>
           <Typography gutterBottom variant="h7" component="h2">
-             {data.price} 
-             <Button className={classes.btn} value={data.productId}>
+             {data.price}
+             <Button className={classes.btn} value={data.productId} onClick={handleDetailedProduct}>
          View
         </Button>
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             {data.description}
-          </Typography>        
+          </Typography>
         </CardContent>
-        
+
     </Card>
-   
+
     )
 
     /*
@@ -71,14 +71,14 @@ const ProductsList = ({productsListByCategory}) => {
     </div>
     )*/
        /* const imageStyle = {
-        width: 200, 
+        width: 200,
         height: 250,
     }*/
 
 
     return(
         <div className={classes.listContainer} >
-          {data}
+			{data}
         </div>
     )
 };
@@ -99,20 +99,20 @@ export default ProductsList;
 
 //   },
 //   media: {
-//       width: 200, 
+//       width: 200,
 //       height: 250,
-      
+
 //   },
 //   container:{
 //       display: "flex",
 //       flexWrap: "wrap",
-// 	  flexDirection: "row",	 
+// 	  flexDirection: "row",
 // 	  justifyContent: 'space-between',
-//       padding: "5px"   
-		
+//       padding: "5px"
+
 //   },
 //   description:{
-//        width: 200, 
+//        width: 200,
 //       height: 50,
 //   },
 //   listContainer:{

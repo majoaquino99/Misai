@@ -8,6 +8,7 @@ import {  makeStyles }  from '@material-ui/core/styles';
 import  mockCategories  from '../mockCategories';
 import mockPromotions from '../mockPromotions';
 import productById from '../DetailedProductComponent/productId'
+import productsListByCategory from '../ProductsComponent/ListOfProducts';
 
 //view promotions and categories
 //view lista de productos
@@ -73,7 +74,7 @@ const HomePage = () => {
 				{view === 1
 				?
 				(
-					<ProductsList  goBack={goBack} handleDetailedProduct={handleDetailedProduct}/>
+					<ProductsList  productsListByCategory={productsListByCategory} goBack={goBack} handleDetailedProduct={handleDetailedProduct}/>
 				) : null}
 				{view === 2
 				?
