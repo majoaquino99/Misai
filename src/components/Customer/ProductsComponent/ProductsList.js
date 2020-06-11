@@ -63,18 +63,6 @@ const ProductsList = ({productsList, handleDetailedProduct, goBack}) => {
 
     )
 
-    /*
-    <div className='dataReturn'>
-        <img src={data.picture} alt='t-shirtimage' style={imageStyle}/>
-        <p key={data.price}>{data.price}</p>
-        <p key={data.description}>{data.description}</p>
-    </div>
-    )*/
-       /* const imageStyle = {
-        width: 200,
-        height: 250,
-    }*/
-
 
     return(
         <div className={classes.listContainer} >
@@ -85,37 +73,3 @@ const ProductsList = ({productsList, handleDetailedProduct, goBack}) => {
 
 export default ProductsList;
 
-
-// root: {
-
-//     background:"pink",
-//     display: "flex",
-//     flexWrap: "wrap",
-//   },
-//   conainermedia:{
-//       display: "flex",
-//       flexWrap: "wrap",
-//       alingItems: "center"
-
-//   },
-//   media: {
-//       width: 200,
-//       height: 250,
-
-//   },
-//   container:{
-//       display: "flex",
-//       flexWrap: "wrap",
-// 	  flexDirection: "row",
-// 	  justifyContent: 'space-between',
-//       padding: "5px"
-
-//   },
-//   description:{
-//        width: 200,
-//       height: 50,
-//   },
-//   listContainer:{
-//       width:'100%',
-//       background:"blue"
-//   }
