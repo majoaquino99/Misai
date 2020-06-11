@@ -1,5 +1,6 @@
 //view promotions and categories
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import HeaderCustomer from '../HeaderCustomer';
 import ProductsList from '../ProductsComponent/ProductsList';
 import PromotionsList from '../PromotionsComponent/PromotionsList';
@@ -32,6 +33,7 @@ const useStyles = makeStyles(() => ({
 
 const HomePage = () => {
 	const classes = useStyles();
+	const history = useHistory();
 
 	// render condicional of views
 	const [view, setView] = useState(0);
@@ -45,14 +47,17 @@ const HomePage = () => {
 
 	const [selectedCategory, setSelectedCategory] = useState(0);
 
+	const handleLoginView = (e) => {
+		e.preventDefault();
+		history.push('/login');
+	}
+
 	const handleShowProducts = (e) => {
 		e.preventDefault();
 		const selectedValue = e.currentTarget.value;
 		setSelectedCategory(parseInt(selectedValue, 10));
 		setView(2)
 	}
-
-	const filteredData = products.filter((c) => c.categoryId === selectedCategory);
 
 	const handleDetailedProduct = (e) => {
 		e.preventDefault();
@@ -66,20 +71,24 @@ const HomePage = () => {
 		setId(selectedValue);
 		setView(1)
 	}
+	const filteredData = products.filter((c) => c.categoryId === selectedCategory);
 
 
- 	const goBack = () => {
-        const aux = view - 1;
-        setView(aux);
+ 	const  goToProductsByCategories = () => {
+        setView(2);
 	};
-	const returnHome = () => {
+	const goHome = () => {
         setView(0);
 	};
 
 
     return(
         <div className= {classes.Page}>
-            <HeaderCustomer categoriesSection={categories} handleShowProducts={handleShowProducts}/>
+            <HeaderCustomer
+			categoriesSection={categories}
+			handleShowProducts={handleShowProducts}
+			handleLoginView={handleLoginView}
+			/>
             <div style={{marginTop: "140px"}}>
 				{view === 0
 				?
@@ -94,25 +103,27 @@ const HomePage = () => {
 				{view === 1
 				?
 				(
-					<DetailedProduct productById={product} goBack={goBack}/>
+					<>
+						<Button onClick={goHome} className={classes.btn} style={{marginTop: "20px"}}> <ArrowBackIosIcon style={{fontSize: 15 }}/> Back </Button>
+						<DetailedProduct productById={product} goBack={goHome}/>
+					</>
 				) : null}
 				{view === 2
 				?
 				(
 					<>
-						<Button onClick={goBack} className={classes.btn} style={{marginTop: "20px"}}> <ArrowBackIosIcon style={{fontSize: 15 }}/> Back </Button>
-						<ProductsList  productsList={filteredData} goBack={goBack} handleDetailedProduct={handleDetailedProduct}/>
+						<Button onClick={goHome} className={classes.btn} style={{marginTop: "20px"}}> <ArrowBackIosIcon style={{fontSize: 15 }}/> Back </Button>
+						<ProductsList  productsList={filteredData} handleDetailedProduct={handleDetailedProduct}/>
 					</>
 				) : null}
 				{view === 3
 				?
 				(
 					<>
-						<Button onClick={returnHome} className={classes.btn} style={{marginTop: "20px"}}>
-							<ArrowBackIosIcon style={{fontSize: 15 }}/>
-								Home
+						<Button onClick={goToProductsByCategories} className={classes.btn} style={{marginTop: "20px"}}>
+							<ArrowBackIosIcon style={{fontSize: 15 }}/> Back
 						</Button>
-						<DetailedProduct productById={product} goBack={goBack}/>
+						<DetailedProduct productById={product}/>
 					</>
 				) : null}
             </div>

@@ -96,7 +96,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-const HeaderCustomer = ({categoriesSection, handleShowProducts}) => {
+const HeaderCustomer = ({categoriesSection, handleShowProducts, handleLoginView}) => {
 	const classes = useStyles();
 
 	return (
@@ -119,7 +119,9 @@ const HeaderCustomer = ({categoriesSection, handleShowProducts}) => {
           </div>
 					<div>
 						<Button> <ShoppingCartIcon style={{ fontSize: 30 }} /> </Button>
-						<Button  className={classes.button}>Admin </Button>
+						<Button
+						className={classes.button}
+						onClick={handleLoginView}>Admin </Button>
 					</div>
 				</Toolbar>
 				<Toolbar className={classes.links}>
