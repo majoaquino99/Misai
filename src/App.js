@@ -14,6 +14,7 @@ function App() {
         {/* <PrivateRoute exact path="/Admin" component ={Admin}/> */}
         <Route exact path="/Login" component ={Login}/>
         <Route exact path="/" component ={Home}/>
+        
     </Router>
 
 	);
