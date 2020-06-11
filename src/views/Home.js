@@ -12,6 +12,7 @@ import usePromotions from '../controller/usePromotions';
 // import Man from './v/Man'
 
 
+
 function Home() {
 
 	const {categories, imageCategories, errorCategories} = useCategories(1);
@@ -37,10 +38,10 @@ function Home() {
 		});
 	}
 
+
 	return (
 		<>
 			<HomePage />
-			{categoriesSection}
 		</>
 	);
 }

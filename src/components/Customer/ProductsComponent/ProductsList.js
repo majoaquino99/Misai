@@ -10,6 +10,7 @@ import Button from '@material-ui/core/Button';
 // on the value received by categories
 // You need to create an infinite scroll grid including 5-6 products on each row
 // Condition the image size to be the same for each one
+
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
@@ -31,14 +32,14 @@ const useStyles = makeStyles({
 
 });
 
-const ProductsList = ({productsListByCategory, handleDetailedProduct, goBack }) => {
+const ProductsList = ({productsList, handleDetailedProduct}) => {
     const classes = useStyles();
 
-	const products = productsListByCategory;
+	const products = productsList;
 
 	const data = products.map((data) =>
 
-    <Card className={classes.root}>
+    <Card key ={data.productId} className={classes.root}>
         <CardMedia
           component="img"
           alt="img"
@@ -48,8 +49,8 @@ const ProductsList = ({productsListByCategory, handleDetailedProduct, goBack }) 
           title="img"
         />
         <CardContent>
-          <Typography gutterBottom variant="h7" component="h2">
-             {data.price}
+          <Typography gutterBottom variant="subtitle1" component="h2">
+             ${data.price}
              <Button className={classes.btn} value={data.productId} onClick={handleDetailedProduct}>
          View
         </Button>
@@ -63,18 +64,6 @@ const ProductsList = ({productsListByCategory, handleDetailedProduct, goBack }) 
 
     )
 
-    /*
-    <div className='dataReturn'>
-        <img src={data.picture} alt='t-shirtimage' style={imageStyle}/>
-        <p key={data.price}>{data.price}</p>
-        <p key={data.description}>{data.description}</p>
-    </div>
-    )*/
-       /* const imageStyle = {
-        width: 200,
-        height: 250,
-    }*/
-
 
     return(
         <div className={classes.listContainer} >
@@ -85,37 +74,3 @@ const ProductsList = ({productsListByCategory, handleDetailedProduct, goBack }) 
 
 export default ProductsList;
 
-
-// root: {
-
-//     background:"pink",
-//     display: "flex",
-//     flexWrap: "wrap",
-//   },
-//   conainermedia:{
-//       display: "flex",
-//       flexWrap: "wrap",
-//       alingItems: "center"
-
-//   },
-//   media: {
-//       width: 200,
-//       height: 250,
-
-//   },
-//   container:{
-//       display: "flex",
-//       flexWrap: "wrap",
-// 	  flexDirection: "row",
-// 	  justifyContent: 'space-between',
-//       padding: "5px"
-
-//   },
-//   description:{
-//        width: 200,
-//       height: 50,
-//   },
-//   listContainer:{
-//       width:'100%',
-//       background:"blue"
-//   }

@@ -10,4 +10,4 @@ const productById = {
         "updateDate": null,
         "isActive": true
     }
-    export default productById
+    export default productById;

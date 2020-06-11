@@ -14,15 +14,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function CategoriesList({mockCategories}) {
+export default function CategoriesList({categoriesSection}) {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
-	  {mockCategories.map(category => (
-		<Grid item xs>
-          <Paper key={category.categoryId} className={classes.paper}>{category.description}</Paper>
+	  {categoriesSection.map(category => (
+		<Grid  key={category.categoryId} item xs>
+          <Paper className={classes.paper}>{category.description}</Paper>
         </Grid>
 		))}
       </Grid>

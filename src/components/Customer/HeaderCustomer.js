@@ -96,7 +96,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-const HeaderCustomer = ({mockCategories, handleShowProducts}) => {
+const HeaderCustomer = ({categoriesSection, handleShowProducts, handleLoginView}) => {
 	const classes = useStyles();
 
 	return (
@@ -119,7 +119,9 @@ const HeaderCustomer = ({mockCategories, handleShowProducts}) => {
           </div>
 					<div>
 						<Button> <ShoppingCartIcon style={{ fontSize: 30 }} /> </Button>
-						<Button  className={classes.button}>Admin </Button>
+						<Button
+						className={classes.button}
+						onClick={handleLoginView}>Admin </Button>
 					</div>
 				</Toolbar>
 				<Toolbar className={classes.links}>
@@ -127,7 +129,7 @@ const HeaderCustomer = ({mockCategories, handleShowProducts}) => {
 						<LabelIcon/> All discount
 					</Button>
                     <form>
-					{mockCategories.map(category => (
+					{categoriesSection.map(category => (
 						<Button
 						 className={classes.button}
 						 key={category.description}
