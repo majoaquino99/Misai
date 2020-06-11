@@ -50,7 +50,7 @@ const ProductsList = ({productsListByCategory}) => {
         <CardContent>
           <Typography gutterBottom variant="h7" component="h2">
              {data.price} 
-             <Button className={classes.btn} >
+             <Button className={classes.btn} value={data.productId}>
          View
         </Button>
           </Typography>
