@@ -1,0 +1,1 @@
+// Aquí irá el footer, borrar este comentario al finalizar componente
