@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
       alignItems: 'center',
       height: '60vh',
       width:'40vh',
-     
+
     },
     divDetails:{
       display: 'flex',
@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1),
       minWidth: 120,
       marginTop:"20px"
-      
+
     },
     selectEmpty: {
       marginTop: theme.spacing(2),
@@ -68,14 +68,14 @@ const useStyles = makeStyles((theme) => ({
     btn:{
       margin: "10px",
       color: "black",
-      '&:hover': {	
+      '&:hover': {
         border:"1px solid black",
         color:"black"}
     },
-  
+
 }));
 
-const DetailedProduct = ({productById}) => {
+const DetailedProduct = ({productById, goBack}) => {
   const classes = useStyles();
 
   //State selector
@@ -83,7 +83,7 @@ const DetailedProduct = ({productById}) => {
       cant: '',
       total: 'hai',
     });
-  
+
     const handleChange = (event) => {
       const name = event.target.name;
       setState({
@@ -93,21 +93,21 @@ const DetailedProduct = ({productById}) => {
       console.log(event.target.value)
 
     };
-    
+
     return(
         <React.Fragment>
-        <button> back</button>
+        <button onClick={goBack}> Back </button>
         <CssBaseline />
         <Container className={classes.Container} maxWidth="sm" >
-        <div className={classes.divImg}> 
+        <div className={classes.divImg}>
         <img src={productById.picture} alt='Logo Misai' width={250}/>
         <div>
         <Typography  variant="subtitle1" > Share with :</Typography>
         <Button > <FacebookIcon style={{ fontSize: 30 }} /> </Button>
         <Button > <PinterestIcon style={{ fontSize: 30 }} /> </Button>
         </div>
-        </div> 
-        <div className={classes.divDetails}> 
+        </div>
+        <div className={classes.divDetails}>
         <Typography className={classes.text} variant="h5" > {productById.description} </Typography>
         <Typography className={classes.text} variant="subtitle1" > Color: {productById.colors} </Typography>
         <Typography className={classes.text} variant="subtitle1" > Sizes: {productById.sizes} </Typography>

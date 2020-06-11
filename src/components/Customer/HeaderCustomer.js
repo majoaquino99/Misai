@@ -119,7 +119,7 @@ const HeaderCustomer = ({mockCategories, handleShowProducts}) => {
           </div>
 					<div>
 						<Button> <ShoppingCartIcon style={{ fontSize: 30 }} /> </Button>
-						<Button   className={classes.button}>Admin </Button>
+						<Button  className={classes.button}>Admin </Button>
 					</div>
 				</Toolbar>
 				<Toolbar className={classes.links}>
@@ -132,7 +132,7 @@ const HeaderCustomer = ({mockCategories, handleShowProducts}) => {
 						 className={classes.button}
 						 key={category.description}
 						 onClick={handleShowProducts}
-						 value={category.categoryId}
+						 value= {category.categoryId}
 						 type="submit"
 						 >
                             {category.description}

@@ -22,39 +22,64 @@ const useStyles = makeStyles(() => ({
 const HomePage = () => {
     const classes = useStyles();
 	const [view, setView] = useState(0);
-	const [value, setValue] = useState()
+	const [value, setValue] = useState({
+		categoryId: '',
+		productId:'',
+	})
 
     const handleShowProducts = (e) => {
 		e.preventDefault();
 		const selectedValue = e.currentTarget.value;
-		setValue()
-        setView(1)
+		setValue({
+			...value,
+			categoryId: selectedValue,
+		});
+		setView(1)
 	}
-/* 	const goBack = () => {
+	/* console.log(value); */
+
+	const handleDetailedProduct = (e) => {
+		e.preventDefault();
+		const selectedValue = e.target.value;
+		setValue({
+			...value,
+			productId: selectedValue,
+		});
+		setView(2)
+		console.log(value);
+
+	}
+
+ 	const goBack = () => {
         const aux = view - 1;
         setView(aux);
-	}; */
+	};
+
 
     return(
         <div className= {classes.Page}>
 
             <HeaderCustomer mockCategories={mockCategories} handleShowProducts={handleShowProducts}/>
-            <div>
-            {view === 0
-            ?
-            (
-                <div style={{marginTop: "140px"}}>
-                {/* Aqui pueden moverle pa ver sus componentes */}
-                <PromotionsList mockPromotions={mockPromotions}/>
-                <CategoriesList mockCategories={mockCategories}/>
-                <DetailedProduct productById={productById}/>           
-                </div>
-            ) : null}
-            {view === 1
-            ?
-            (
-                <ProductsList/>
-            ) : null}
+            <div style={{marginTop: "140px"}}>
+				{view === 0
+				?
+				(
+					<>
+						{/* Aqui pueden moverle pa ver sus componentes */}
+						<PromotionsList mockPromotions={mockPromotions}/>
+						<CategoriesList mockCategories={mockCategories}/>
+					</>
+				) : null}
+				{view === 1
+				?
+				(
+					<ProductsList  goBack={goBack} handleDetailedProduct={handleDetailedProduct}/>
+				) : null}
+				{view === 2
+				?
+				(
+					<DetailedProduct productById={productById} goBack={goBack}/>
+				) : null}
             </div>
         </div>
     )

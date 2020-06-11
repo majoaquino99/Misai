@@ -10,7 +10,8 @@ const PromotionsList = ({mockPromotions}) => {
 	}
 	return (
 		<div>
-			<Carousel showThumbs={false} >
+			<Carousel showThumbs={false}  infiniteLoop
+        centerMode >
 				{mockPromotions.map(promotion => (
 					<div key={promotion.promotionID} >
 						<img
