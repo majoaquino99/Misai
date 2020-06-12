@@ -30,6 +30,7 @@ const LandingPage = () => {
 				?
 				(
 					<Products/>
+					
 				)
 				: null }
 				{view === 1

@@ -131,6 +131,7 @@ const DetailedProduct = ({productById}) => {
 							<option value={1}>1</option>
 							<option value={2}>2</option>
 							<option value={3}>3</option>
+
 						</Select>
 
 						<Button className={classes.btn} >
@@ -145,4 +146,5 @@ const DetailedProduct = ({productById}) => {
 };
 
 export default DetailedProduct;
+
 
