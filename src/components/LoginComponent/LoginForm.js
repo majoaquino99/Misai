@@ -1,5 +1,5 @@
-import React, { useState, useContext, useCallback } from "react";
-import { Redirect, useHistory } from "react-router-dom";
+import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
@@ -51,8 +51,6 @@ const useStyles = makeStyles((theme) => ({
 
 const LoginForm = () => {
 	const classes = useStyles();
-	/* const [email, setEmail] = useState('');
-  const [password, setPassword] = useState(''); */
 	const [error, setError] = useState("");
 	const history = useHistory();
 

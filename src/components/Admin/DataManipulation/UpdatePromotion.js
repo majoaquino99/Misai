@@ -5,7 +5,6 @@ import Typography from "@material-ui/core/Typography";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import Button from "@material-ui/core/Button";
 import CancelIcon from "@material-ui/icons/Cancel";
-import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import AddAPhotoIcon from "@material-ui/icons/AddAPhoto";
 
 const useStyles = makeStyles((theme) => ({
@@ -66,19 +65,8 @@ const useStyles = makeStyles((theme) => ({
 const UpdatePromotion = () => {
 	const classes = useStyles();
 
-	const [selectedDate, setSelectedDate] = React.useState(
-		new Date("2014-08-18T21:11:54")
-	);
-
-	const handleDateChange = (date) => {
-		setSelectedDate(date);
-	};
 	return (
 		<div>
-			<Button className={classes.btnback} style={{ marginTop: "20px" }}>
-				<ArrowBackIosIcon style={{ fontSize: 30 }} /> back
-			</Button>
-
 			<form className={classes.root}>
 				<Typography className={classes.title} variant="h4" gutterBottom>
 					{" "}

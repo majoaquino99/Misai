@@ -8,7 +8,6 @@ import MenuItem from "@material-ui/core/MenuItem";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import Button from "@material-ui/core/Button";
 import CancelIcon from "@material-ui/icons/Cancel";
-import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import axios from 'axios';
 import useToken from '../../../controller/useToken'
 
@@ -20,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 		flexWrap: "wrap",
 		alignItems: "center",
 		justifyContent: "center",
-		
+
 		"& > *": {
 			margin: theme.spacing(1),
 			width: "25ch",
@@ -62,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
 		color: "black",
 		border: "1px solid #c1bebd",
 	},
-	
+
 }));
 
 const UpdateProduct = () => {
@@ -110,18 +109,11 @@ const UpdateProduct = () => {
 	};
 
 	const handlePrice = (e) => {
-		setSizes(e.target.value)
+		setPrice(e.target.value)
 	};
 
-	const time = Date.now();
-	//DIA En que se creo y dia en que se edito
-	//console.log(time);
+
 	return (
-		<div>
-			<Button className={classes.btnback} style={{ marginTop: "20px" }}>
-				{" "}
-				<ArrowBackIosIcon style={{ fontSize: 15 }} /> back{" "}
-			</Button>
 		<div>
 			<form className={classes.root} noValidate>
 				<Typography className={classes.title} variant="h4" gutterBottom>
@@ -149,7 +141,7 @@ const UpdateProduct = () => {
 				<TextField id="sizes" label="Sizes" value = { sizes } onChange={handleSizes} variant="outlined" />
 				<TextField id="price" label="Price" value = { price } onChange={handlePrice} variant="outlined" />
 				<TextField id="picture" label="Picture" variant="outlined" />
-				<div> 
+				<div>
 				<InputLabel id="demo-simple-select-label">Active</InputLabel>
 				<Select
 					labelId="demo-simple-select-label"
@@ -172,7 +164,6 @@ const UpdateProduct = () => {
 					</Button>
 				</div>
 			</form>
-			</div>
 		</div>
 	);
 };

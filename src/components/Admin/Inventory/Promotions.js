@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import PostAddIcon from '@material-ui/icons/PostAdd';
@@ -8,6 +8,9 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
+import Button from "@material-ui/core/Button";
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
+import UpdatePromotion from '../DataManipulation/UpdatePromotion';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -58,6 +61,16 @@ const useStyles = makeStyles((theme) => ({
 const Promotions = ({promotionsData}) =>{
 	const classes = useStyles();
 	const promotions = promotionsData;
+	const [flag, setFlag] = useState(false);
+
+	const handleAddPromotion = (e) => {
+		e.preventDefault();
+		setFlag(true)
+	}
+	const handlePromotionList = (e) => {
+		e.preventDefault();
+		setFlag(false)
+	}
 
 	const  data = promotions.map((data) =>
 
@@ -103,13 +116,30 @@ const Promotions = ({promotionsData}) =>{
 
 
 	return(
-		<div className={classes.container}>
-			<IconButton aria-label="addButton">
-			<PostAddIcon className={classes.icon}/>
-			<p>Add promotion</p>
-			</IconButton>
-			{data}
-		</div>
+		<div style={{ textAlign: "center " }}>
+		{flag === false
+		?
+			(
+				<div className={classes.container}>
+					<IconButton onClick = {handleAddPromotion} aria-label="addButton">
+					<PostAddIcon className={classes.icon}/>
+					<p>Add promotion</p>
+					</IconButton>
+					{data}
+				</div>
+			)
+			: null}
+		{flag === true
+			?
+				(
+					<>
+					<Button onClick={handlePromotionList} className={classes.btn} style={{marginTop: "20px"}}> <ArrowBackIosIcon style={{fontSize: 15 }}/> Back </Button>
+					<UpdatePromotion setFlag={setFlag}/>
+					</>
+				)
+			: null}
+			</div>
+
 	)
 }
 

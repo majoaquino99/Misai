@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import HeaderAdmin from '../HeaderAdmin'
-import Analytics from '../Analytics'
 // Inventory
 import Products from '../Inventory/Products';
 import Categories from '../Inventory/Categories';
 import Promotions from '../Inventory/Promotions';
 // Manipulation
-import UpdateProduct from '../DataManipulation/UpdateProduct';
-import UpdateCategory from '../DataManipulation/UpdateCategory';
-import UpdatePromotion from '../DataManipulation/UpdatePromotion';
 import usePromotions from '../../../controller/usePromotions';
 import useProducts from '../../../controller/useProducts';
 import useCategories from '../../../controller/useCategories';
@@ -22,14 +18,7 @@ const LandingPage = () => {
 	const history = useHistory();
 	const {promotions, errorPromotions} = usePromotions();
 	const {products, errorProducts} = useProducts();
-	const {categories, imageCategories, errorCategories} = useCategories();
-
-
-	/* const goBack = () => {
-        const aux = view - 1;
-        setView(aux);
-	};
- */
+	const {categories, errorCategories} = useCategories();
 
 
 	const handleProductsInventory = (e) => {
@@ -52,7 +41,6 @@ const LandingPage = () => {
 
 	return(
 		<>
-
 			<HeaderAdmin
 				handleProductsInventory={handleProductsInventory}
 				handleCategoriesInventory={handleCategoriesInventory}

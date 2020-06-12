@@ -10,10 +10,8 @@ import Select from '@material-ui/core/Select';
 import Button from '@material-ui/core/Button';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import FacebookIcon from '@material-ui/icons/Facebook';
-import PinterestIcon from '@material-ui/icons/Pinterest';
 import WhatsappIcon from '@material-ui/icons/WhatsApp';
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import {  FacebookShareButton, PinterestShareButton, WhatsappShareButton  } from "react-share";
+import {  FacebookShareButton, WhatsappShareButton  } from "react-share";
 
 const useStyles = makeStyles((theme) => ({
 
