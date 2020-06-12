@@ -101,7 +101,8 @@ const DetailedProduct = ({productById}) => {
 		<CssBaseline />
 			<Container className={classes.Container} maxWidth="sm" >
 				<div className={classes.divImg}>
-					<img src={ `https://genericapiv1.azurewebsites.net/v1/shop/products/${productById.productId}/image`} alt='Logo Misai' width={250}/>
+					<img src={ `https://genericapiv1.azurewebsites.net/v1/shop/products/${productById.productId}/image`}
+					alt='Logo Misai' width={250}/>
 					<div>
 						<Typography  variant="subtitle1" > Share with :</Typography>
 						<Button > <FacebookIcon style={{ fontSize: 30 }} /> </Button>
