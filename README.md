@@ -86,7 +86,28 @@ Thinking to have more results on the next iterations we are adding the analytics
 
 
 ## 5. Prototypes
+![color_palette](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Palette.png) 
+
+We are using this color palette to create an enviroment when the user can be him/herself, combine this palette with the color white as a background we are creating a clean and safe enviroment where the user can feel safe, free and he / she can buy whitout pressure the most fashion clothes and accesories.
+
+According the low quality prototype and the proposal that the product owner and the team gave us let me present all the high quality prototype for this fashion retail web app.
+
+![homepage](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/misai_homepage.png)
+
+![productview](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/misai_productview.png)
+
+![admin_viewfront](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/misai_frontadmin.png)
+
+![admin_addproduct](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/misai_addproduct.png)
+
+![admin_analytics](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/misai_analytics.png)
+
+[Final Prototype](https://www.figma.com/proto/d1ZUsLk4Ga5YgFBkwKJg9O/Nagarro?node-id=16%3A45&scaling=scale-down) Here you can see the complete prototype.
+
+
 
 ## 6. Finished product
+
 ## 7. Authors
+
 ## 8. Acknowledgements
