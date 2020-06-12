@@ -113,23 +113,28 @@ According the low quality prototype and the proposal that the product owner and 
 ### Squad 1 the autors for this awesome project
 <image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/codewithme.jpg" width="30%">
 
-<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Mirey.jpg" width="30%">
+<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Mirey.jpg" width="30%"><br>
+
 :pushpin: [Mirey Morales](https://github.com/Mirey91 'Repository of Mirey')
 
-<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Majo.jpg" width="30%">
+<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Majo.jpg" width="30%"><br>
+
 :pushpin: [María José Aquino](https://www.github.com/majoaquino99 'Repository of Majo')
 
-<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Itza.jpg" width="30%">
+<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Itza.jpg" width="30%"><br>
+
 :pushpin: [Itza Carrillo](https://github.com/ItzaCarrillo 'Repository of Itza')
 
-<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Monse.jpg" width="30%">
+<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Monse.jpg" width="30%"><br>
+
 :pushpin: [Monse Salas](https://github.com/MonseSalasVi 'Repository of Monse')
 
-<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Brenda.jpg" width="30%">
+<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Brenda.jpg" width="30%"><br>
+
 :pushpin: [Brenda Sandoval](https://github.com/Sahory31 'Repository of Brenda')
 
 
-<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Tita.jpg" width="30%">
+<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Tita.jpg" width="30%"><br>
 
 :pushpin: [Martha Navarro](https://Tita-Navarro.github.io 'Portfolio of Tita')
 
