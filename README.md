@@ -108,6 +108,18 @@ According the low quality prototype and the proposal that the product owner and 
 
 ## 6. Finished product
 
+After these days of challenge here it is our final product:
+
+<image src='https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/misaihome.jpg' width="60%">
+
+<image src='https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/misaiproducts.jpg' width='60%'>
+
+<image src='https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/misaiproductview.jpg' width='60%'>
+
+<image src='https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/misailogin.jpg' width='60%'>
+
+<image src='https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/misaiadminaddproduct.jpg' width='60%'>
+
 ## 7. Authors
 
 ### Squad 1 the autors for this awesome project
@@ -140,7 +152,7 @@ According the low quality prototype and the proposal that the product owner and 
 
 ## 8. Acknowledgements
 
-#### Our thanks for this great teams for this great challenge and work
+Our thanks for this great teams for this great challenge and work
 
 <image src='https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/nagarro_team.png' width='60%'> <br>
 
