@@ -111,19 +111,19 @@ According the low quality prototype and the proposal that the product owner and 
 ## 7. Authors
 
 ### Squad 1 the autors for this awesome project
-![code_with_me](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/codewithme.jpg)
+<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/codewithme.jpg" width="50%">
 
-![Mirey](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Mirey.jpg)
+<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Mirey.jpg" width="50%">
 
-![Majo](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Majo.jpg)
+<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Majo.jpg" width="50%">
 
-![Itza](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Itza.jpg)
+<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Itza.jpg" width="50%">
 
-![Monse](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Monse.jpg)
+<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Monse.jpg" width="50%">
 
-![Brenda](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Brenda.jpg)
+<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Brenda.jpg" width="50%">
 
-![Tita](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Tita.jpg)
+<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Tita.jpg" width="50%">
 
 
 ## 8. Acknowledgements
