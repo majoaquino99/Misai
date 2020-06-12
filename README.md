@@ -144,4 +144,4 @@ According the low quality prototype and the proposal that the product owner and 
 
 <image src='https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/nagarro_team.png' width='60%'> <br>
 
-<image src='https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/laboratoria_team.png'>
+<image src='https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/laboratoria_team.png' width='60%'>
