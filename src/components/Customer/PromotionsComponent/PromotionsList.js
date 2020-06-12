@@ -8,6 +8,7 @@ const PromotionsList = ({promotionsSection}) => {
 		width: 'auto',
 		background:'transparent'
 	}
+
 	return (
 		<div>
 			<Carousel
@@ -19,7 +20,7 @@ const PromotionsList = ({promotionsSection}) => {
 					<div key={promotion.promotionID} >
 						<img
 						alt={promotion.description}
-						src={promotion.picture}
+						src={`https://genericapiv1.azurewebsites.net/v1/shop/promotions/${promotion.promotionID}/image`}
 						style={style}
 						/>
 						<h1 className="legend">{promotion.description}</h1>
@@ -35,3 +36,5 @@ export default PromotionsList;
 /* style={{ display: 'flex',
 			justifyContent: 'center',
 			alignItems: 'center'}} */
+
+
