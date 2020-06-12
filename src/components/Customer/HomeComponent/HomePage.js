@@ -38,12 +38,17 @@ const HomePage = () => {
 	// render condicional of views
 	const [view, setView] = useState(0);
 	const [id, setId] = useState(0);
+	const [categoryImg, setCategoryImg] = useState(0);
+
 
 	// destructuring API
-	const {categories, errorCategories} = useCategories();
+	const {categories, imageCategories, errorCategories} = useCategories();
 	const {promotions, errorPromotions} = usePromotions();
+
 	const {products, errorProducts} = useProducts();
 	const {product, errorProduct} = useProductById(id);
+
+
 
 	const [selectedCategory, setSelectedCategory] = useState(0);
 
@@ -95,7 +100,7 @@ const HomePage = () => {
 				(
 					<>
 						{/* Aqui pueden moverle pa ver sus componentes */}
-						<PromotionsList promotionsSection={promotions}/>
+						<PromotionsList promotionsSection={promotions} />
 						<ProductsList productsList={products}  handleDetailedProduct={handleAux}/>
 
 					</>
