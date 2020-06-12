@@ -9,6 +9,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 
+
 const useStyles = makeStyles((theme) => ({
 	root: {
 	  display: 'flex',
@@ -36,14 +37,14 @@ const useStyles = makeStyles((theme) => ({
 	  paddingLeft: theme.spacing(10),
 	  paddingBottom: theme.spacing(10),
 	  aligitems:'flexEnd',
-	
+
 	},
 	controls: {
 	  display: 'flex',
 	  alignItems: 'center',
 	  paddingLeft: theme.spacing(30),
 	  paddingBottom: theme.spacing(10),
-	  
+
 	},
 
 	icon: {
@@ -54,12 +55,12 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 
-const Promotions = ({mockPromotions}) =>{
+const Promotions = ({promotionsData}) =>{
 	const classes = useStyles();
-	const promotions = mockPromotions;
+	const promotions = promotionsData;
 
-	const  data = promotions.map((data) => 
-	
+	const  data = promotions.map((data) =>
+
 		<Card className={classes.root}>
 		<div className={classes.details}>
 			<CardContent className={classes.content}>
@@ -94,7 +95,7 @@ const Promotions = ({mockPromotions}) =>{
 
 		<CardMedia
 			className={classes.cover}
-			image={data.picture}
+			image={`https://genericapiv1.azurewebsites.net/v1/shop/promotions/${data.promotionID}/image`}
 			alt="img"
 		/>
 		</Card>
@@ -106,7 +107,7 @@ const Promotions = ({mockPromotions}) =>{
 			<IconButton aria-label="addButton">
 			<PostAddIcon className={classes.icon}/>
 			<p>Add promotion</p>
-			</IconButton> 
+			</IconButton>
 			{data}
 		</div>
 	)

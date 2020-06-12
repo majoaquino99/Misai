@@ -13,14 +13,14 @@ const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
     },
-    nav:{ 
+    nav:{
       background:"#ffffff",
       borderBottomStyle:"solid",
       borderBottomColor:"#938A95",
       borderBottomWidth:"8px",
     },
     img: {
-      marginRight: theme.spacing(1),	
+      marginRight: theme.spacing(1),
     },
     title: {
       flexGrow: 1,
@@ -35,12 +35,13 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const HeaderAdmin = () => {
+const HeaderAdmin = ({handleProductsInventory, handleCategoriesInventory,
+	handlePromotionsInventory, handleLogout}) => {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = useState(null);
 
   const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
+	setAnchorEl(event.currentTarget);
   };
 
   const handleClose = () => {
@@ -63,7 +64,7 @@ const HeaderAdmin = () => {
           <Typography variant="h6" className={classes.title}>
            Admin
           </Typography>
-          
+
           <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
           <MenuIcon />
           </Button>
@@ -74,11 +75,10 @@ const HeaderAdmin = () => {
               open={Boolean(anchorEl)}
              onClose={handleClose}
             >
-            <MenuItem onClick={handleClose}>Inventory</MenuItem>
-            <MenuItem onClick={handleClose}>Promotions</MenuItem>
-            <MenuItem onClick={handleClose}>Categories</MenuItem>
-            <MenuItem onClick={handleClose}>Analytics</MenuItem>
-            <MenuItem onClick={handleClose}>Log out</MenuItem>
+            <MenuItem onClick={handleProductsInventory}>Inventory</MenuItem>
+            <MenuItem onClick={handlePromotionsInventory}>Promotions</MenuItem>
+            <MenuItem onClick={handleCategoriesInventory}>Categories</MenuItem>
+            <MenuItem onClick={handleLogout}>Log out</MenuItem>
           </Menu>
         </Toolbar>
       </AppBar>

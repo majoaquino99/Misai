@@ -38,7 +38,6 @@ const HomePage = () => {
 	// render condicional of views
 	const [view, setView] = useState(0);
 	const [id, setId] = useState(0);
-	const [categoryImg, setCategoryImg] = useState(0);
 
 
 	// destructuring API
