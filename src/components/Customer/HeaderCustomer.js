@@ -8,7 +8,6 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
-import LabelIcon from '@material-ui/icons/Label';
 
 
 const useStyles = makeStyles((theme) => ({

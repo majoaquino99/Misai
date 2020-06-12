@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import productsListByCategory from "./MockProducts";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
@@ -12,6 +11,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import EditIcon from "@material-ui/icons/Edit";
 import Button from "@material-ui/core/Button";
 import NoteAddIcon from "@material-ui/icons/NoteAdd";
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import UpdateProduct from '../DataManipulation/UpdateProduct';
 
 
@@ -35,7 +35,7 @@ const useStyles = makeStyles({
 	},
 });
 
-const ProductsList = () => {
+const ProductsList = ({productsList}) => {
 	const classes = useStyles();
 
 	const [flag, setFlag] = useState(false);
@@ -44,9 +44,12 @@ const ProductsList = () => {
 		e.preventDefault();
 		setFlag(true)
 	}
+	const handleProductList = (e) => {
+		e.preventDefault();
+		setFlag(false)
+	}
 
-	console.log({ productsListByCategory });
-	const products = productsListByCategory;
+	const products = productsList;
 
 	const data = products.map((data) => (
 		<TableRow key={data.productId}>
@@ -97,7 +100,10 @@ const ProductsList = () => {
 		{flag === true
 		?
 			(
+				<>
+				<Button onClick={handleProductList} className={classes.btn} style={{marginTop: "20px"}}> <ArrowBackIosIcon style={{fontSize: 15 }}/> Back </Button>
 				<UpdateProduct setFlag={setFlag}/>
+				</>
 			)
 		: null}
 
