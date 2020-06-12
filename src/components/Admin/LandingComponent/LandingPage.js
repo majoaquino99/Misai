@@ -30,7 +30,7 @@ const LandingPage = () => {
 				?
 				(
 					
-					<UpdatePromotion/>
+					<Products/>
 					
 				)
 				: null }

@@ -12,6 +12,9 @@ const useStyles = makeStyles((theme) => ({
 	root: {
 		padding: "20px",
 		boxShadow: "0 0 20px #9A9594",
+		display: "flex",
+		flexDirection: "column",
+		alignItems: "center",
 		"& > *": {
 			margin: theme.spacing(1),
 			width: "25ch",

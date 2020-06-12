@@ -13,8 +13,12 @@ import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 const useStyles = makeStyles((theme) => ({
 	root: {
 		padding: "20px",
-
 		boxShadow: "0 0 20px #9A9594",
+		display: "flex",
+		flexWrap: "wrap",
+		alignItems: "center",
+		justifyContent: "center",
+		
 		"& > *": {
 			margin: theme.spacing(1),
 			width: "25ch",
@@ -40,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
 	title: {
 		color: "938A95",
 		textAlign: "center",
+		width:"100%"
 	},
 	btn: {
 		margin: "1px",
@@ -55,6 +60,7 @@ const useStyles = makeStyles((theme) => ({
 		color: "black",
 		border: "1px solid #c1bebd",
 	},
+	
 }));
 
 const UpdateProduct = () => {
@@ -74,7 +80,7 @@ const UpdateProduct = () => {
 				{" "}
 				<ArrowBackIosIcon style={{ fontSize: 15 }} /> back{" "}
 			</Button>
-
+		<div>
 			<form className={classes.root} noValidate>
 				<Typography className={classes.title} variant="h4" gutterBottom>
 					{" "}
@@ -99,6 +105,7 @@ const UpdateProduct = () => {
 				<TextField id="sizes" label="Sizes" variant="outlined" />
 				<TextField id="price" label="Price" variant="outlined" />
 				<TextField id="picture" label="Picture" variant="outlined" />
+				<div> 
 				<InputLabel id="demo-simple-select-label">Active</InputLabel>
 				<Select
 					labelId="demo-simple-select-label"
@@ -109,6 +116,7 @@ const UpdateProduct = () => {
 					<MenuItem value={"ture"}>True</MenuItem>
 					<MenuItem value={"false"}>False</MenuItem>
 				</Select>
+				</div>
 				<div className={classes.divbtn}>
 					<Button style={{ width: 10 }} className={classes.btn}>
 						{" "}
@@ -120,6 +128,7 @@ const UpdateProduct = () => {
 					</Button>
 				</div>
 			</form>
+			</div>
 		</div>
 	);
 };
