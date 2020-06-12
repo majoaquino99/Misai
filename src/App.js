@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as  Router, Route } from "react-router-dom";
 import Home from './views/Home';
 import Login from './views/Login';
 import Admin from './views/Admin'
@@ -9,7 +9,7 @@ import Admin from './views/Admin'
 
 function App() {
 	return (
-
+        
     <Router>
         {/* <PrivateRoute exact path="/Admin" component ={Admin}/> */}
         <Route exact path="/Login" component ={Login}/>
