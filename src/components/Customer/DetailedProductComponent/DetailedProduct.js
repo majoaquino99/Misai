@@ -80,8 +80,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const DetailedProduct = ({productById}) => {
-  
-  const shareUrl = 'https://github.com/majoaquino99/Misai';
+
+  const shareUrl = 'https://black-beach-0d0cbbf10.azurestaticapps.net/';
   const message = 'Hey! Look what I found at Misai Fashion';
   const classes = useStyles();
 
@@ -116,12 +116,6 @@ const DetailedProduct = ({productById}) => {
             className="shareButtonMisai">
             <FacebookIcon style={{ fontSize: 30 }} round />
           </FacebookShareButton>
-          <PinterestShareButton
-            url={shareUrl}
-            quote={message}
-            className="shareButtonMisai">
-            <PinterestIcon style={{ fontSize: 30 }} round />
-          </PinterestShareButton>
           <WhatsappShareButton
             url={shareUrl}
             quote={message}

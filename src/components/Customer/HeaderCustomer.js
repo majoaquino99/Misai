@@ -125,9 +125,6 @@ const HeaderCustomer = ({categoriesSection, handleShowProducts, handleLoginView}
 					</div>
 				</Toolbar>
 				<Toolbar className={classes.links}>
-					<Button className={classes.button2} >
-						<LabelIcon/> All discount
-					</Button>
                     <form>
 					{categoriesSection.map(category => (
 						<Button
