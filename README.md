@@ -111,7 +111,7 @@ According the low quality prototype and the proposal that the product owner and 
 ## 7. Authors
 
 ### Squad 1 the autors for this awesome project
-<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/codewithme.jpg" width="30%">
+<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/codewithme.jpg" width="50%">
 
 <image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Mirey.jpg" width="30%"><br>
 
