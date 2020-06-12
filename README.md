@@ -110,4 +110,20 @@ According the low quality prototype and the proposal that the product owner and 
 
 ## 7. Authors
 
+### Squad 1 the autors for this awesome project
+![code_with_me](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/codewithme.jpg)
+
+![Mirey](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Mirey.jpg)
+
+![Majo](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Majo.jpg)
+
+![Itza](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Itza.jpg)
+
+![Monse](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Monse.jpg)
+
+![Brenda](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Brenda.jpg)
+
+![Tita](https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Tita.jpg)
+
+
 ## 8. Acknowledgements
