@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import axios from 'axios';
 import useToken from '../../../controller/useToken'
@@ -88,8 +89,6 @@ const UpdateCategory = () => {
 					id="description"
 					label="Description"
 					variant="outlined"
-                    onChange={e => setDescription(e.target.value)} 
-                    name="description"
 				/>
 				<TextField id="picture" label="Picture" variant="outlined" />
 				<AddAPhotoIcon style={{ width: 100 }} />
@@ -105,5 +104,4 @@ const UpdateCategory = () => {
 		</div>
 	)
 }
-
 export default UpdateCategory;

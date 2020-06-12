@@ -137,7 +137,7 @@ const DetailedProduct = ({productById}) => {
 							native
 							value={state.cant}
 							onChange={handleChange}
-							label="Cant"
+							label="Quantity"
 							inputProps={{
 							name: 'cant',
 							id: 'outlined-cant-native-simple',

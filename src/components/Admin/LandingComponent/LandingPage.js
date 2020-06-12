@@ -52,6 +52,7 @@ const LandingPage = () => {
 
 	return(
 		<>
+
 			<HeaderAdmin
 				handleProductsInventory={handleProductsInventory}
 				handleCategoriesInventory={handleCategoriesInventory}
