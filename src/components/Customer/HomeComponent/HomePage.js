@@ -8,7 +8,7 @@ import DetailedProduct from '../DetailedProductComponent/DetailedProduct'
 import {  makeStyles }  from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos'
-
+import Footer from '../../FooterComponent/Footer'
 // Mock Data
 // import  mockCategories  from '../mockCategories';
 // import mockPromotions from '../mockPromotions';
@@ -97,7 +97,7 @@ const HomePage = () => {
 						{/* Aqui pueden moverle pa ver sus componentes */}
 						<PromotionsList promotionsSection={promotions}/>
 						<ProductsList productsList={products}  handleDetailedProduct={handleAux}/>
-
+						
 					</>
 				) : null}
 				{view === 1
@@ -106,6 +106,7 @@ const HomePage = () => {
 					<>
 						<Button onClick={goHome} className={classes.btn} style={{marginTop: "20px"}}> <ArrowBackIosIcon style={{fontSize: 15 }}/> Back </Button>
 						<DetailedProduct productById={product} goBack={goHome}/>
+						
 					</>
 				) : null}
 				{view === 2
@@ -114,6 +115,7 @@ const HomePage = () => {
 					<>
 						<Button onClick={goHome} className={classes.btn} style={{marginTop: "20px"}}> <ArrowBackIosIcon style={{fontSize: 15 }}/> Back </Button>
 						<ProductsList  productsList={filteredData} handleDetailedProduct={handleDetailedProduct}/>
+					
 					</>
 				) : null}
 				{view === 3
@@ -124,6 +126,7 @@ const HomePage = () => {
 							<ArrowBackIosIcon style={{fontSize: 15 }}/> Back
 						</Button>
 						<DetailedProduct productById={product}/>
+						
 					</>
 				) : null}
             </div>
