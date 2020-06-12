@@ -29,6 +29,7 @@ const LandingPage = () => {
 				{view === 0
 				?
 				(
+					
 					<Products/>
 					
 				)
