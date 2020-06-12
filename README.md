@@ -111,19 +111,24 @@ According the low quality prototype and the proposal that the product owner and 
 ## 7. Authors
 
 ### Squad 1 the autors for this awesome project
-<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/codewithme.jpg" width="50%">
+<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/codewithme.jpg" width="30%">
 
-<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Mirey.jpg" width="50%">
+<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Mirey.jpg" width="30%">
+:pushpin: [Mirey Morales](https://github.com/Mirey91)
 
-<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Majo.jpg" width="50%">
+<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Majo.jpg" width="30%">
+:pushpin: [María José Aquino](https://github.com/majoaquino99)
 
-<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Itza.jpg" width="50%">
+<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Itza.jpg" width="30%">
+:pushpin: [Itza Carrillo](https://github.com/ItzaCarrillo)
 
-<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Monse.jpg" width="50%">
+<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Monse.jpg" width="30%">
+:pushpin: [Monse Salas](https://github.com/MonseSalasVi)
+<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Brenda.jpg" width="30%">
 
-<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Brenda.jpg" width="50%">
+:pushpin: [Martha Navarro](https://Tita-Navarro.github.io)
 
-<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Tita.jpg" width="50%">
+<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Tita.jpg" width="30%">
 
 
 ## 8. Acknowledgements
