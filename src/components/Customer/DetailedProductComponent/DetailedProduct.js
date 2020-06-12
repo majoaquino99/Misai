@@ -11,10 +11,12 @@ import Button from '@material-ui/core/Button';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import PinterestIcon from '@material-ui/icons/Pinterest';
+import WhatsappIcon from '@material-ui/icons/WhatsApp';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import {  FacebookShareButton, PinterestShareButton, } from "react-share";
+import {  FacebookShareButton, PinterestShareButton, WhatsappShareButton  } from "react-share";
 
 const useStyles = makeStyles((theme) => ({
+
 	Container: {
 		display: 'flex',
     flexDirection: 'row',
@@ -78,6 +80,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const DetailedProduct = ({productById}) => {
+
+  const shareUrl = 'https://black-beach-0d0cbbf10.azurestaticapps.net/';
+  const message = 'Hey! Look what I found at Misai Fashion';
   const classes = useStyles();
 
   	//State selector
@@ -101,11 +106,22 @@ const DetailedProduct = ({productById}) => {
 		<CssBaseline />
 			<Container className={classes.Container} maxWidth="sm" >
 				<div className={classes.divImg}>
-					<img src={ `https://genericapiv1.azurewebsites.net/v1/shop/products/${productById.productId}/image`} alt='Logo Misai' width={250}/>
+					<img src={ `https://genericapiv1.azurewebsites.net/v1/shop/products/${productById.productId}/image`}
+					alt='Logo Misai' width={250}/>
 					<div>
 						<Typography  variant="subtitle1" > Share with :</Typography>
-						<Button > <FacebookIcon style={{ fontSize: 30 }} /> </Button>
-						<Button > <PinterestIcon style={{ fontSize: 30 }} /> </Button>
+            <FacebookShareButton
+            url={shareUrl}
+            quote={message}
+            className="shareButtonMisai">
+            <FacebookIcon style={{ fontSize: 30 }} round />
+          </FacebookShareButton>
+          <WhatsappShareButton
+            url={shareUrl}
+            quote={message}
+            className="shareButtonMisai">
+            <WhatsappIcon style={{ fontSize: 30 }} round />
+          </WhatsappShareButton>
 					</div>
 				</div>
 				<div className={classes.divDetails}>

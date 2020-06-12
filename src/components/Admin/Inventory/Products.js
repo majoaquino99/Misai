@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import productsListByCategory from "./MockProducts";
 import Table from "@material-ui/core/Table";
@@ -12,16 +12,9 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import EditIcon from "@material-ui/icons/Edit";
 import Button from "@material-ui/core/Button";
 import NoteAddIcon from "@material-ui/icons/NoteAdd";
+import UpdateProduct from '../DataManipulation/UpdateProduct';
 
-function createData(description, category, price, edit, fdelete) {
-	return { description, category, price, edit, fdelete };
-}
 
-const rows = [
-	createData("Frozen yoghurt", 159, 6.0, 24, 4.0),
-	createData("Ice cream sandwich", 237, 9.0, 37, 4.3),
-	createData("Eclair", 262, 16.0, 24, 6.0),
-];
 const useStyles = makeStyles({
 	table: {
 		minWidth: 650,
@@ -44,6 +37,13 @@ const useStyles = makeStyles({
 
 const ProductsList = () => {
 	const classes = useStyles();
+
+	const [flag, setFlag] = useState(false);
+
+	const handleAddProduct = (e) => {
+		e.preventDefault();
+		setFlag(true)
+	}
 
 	console.log({ productsListByCategory });
 	const products = productsListByCategory;
@@ -70,25 +70,37 @@ const ProductsList = () => {
 	));
 	return (
 		<div style={{ textAlign: "center " }}>
-			<div className={classes.divbtn}>
-				<Button className={classes.btn}>
-					Addd product <NoteAddIcon style={{ fontSize: 20 }} />{" "}
-				</Button>
-			</div>
-			<TableContainer component={Paper}>
-				<Table className={classes.table} aria-label="caption table">
-					<TableHead className={classes.title}>
-						<TableRow>
-							<TableCell>Description</TableCell>
-							<TableCell align="center">Category</TableCell>
-							<TableCell align="center">Price</TableCell>
-							<TableCell align="center">Edit</TableCell>
-							<TableCell align="center">Delete</TableCell>
-						</TableRow>
-					</TableHead>
-					<TableBody>{data}</TableBody>
-				</Table>
-			</TableContainer>
+		{flag === false ? (
+			<>
+				<div className={classes.divbtn}>
+					<Button className={classes.btn} onClick={handleAddProduct}>
+						Add product <NoteAddIcon style={{ fontSize: 20 }} />{" "}
+					</Button>
+				</div>
+				<TableContainer component={Paper}>
+					<Table className={classes.table} aria-label="caption table">
+						<TableHead className={classes.title}>
+							<TableRow>
+								<TableCell>Description</TableCell>
+								<TableCell align="center">Category</TableCell>
+								<TableCell align="center">Price</TableCell>
+								<TableCell align="center">Edit</TableCell>
+								<TableCell align="center">Delete</TableCell>
+							</TableRow>
+						</TableHead>
+						<TableBody>{data}</TableBody>
+					</Table>
+				</TableContainer>
+			</>
+
+		) : null}
+		{flag === true
+		?
+			(
+				<UpdateProduct setFlag={setFlag}/>
+			)
+		: null}
+
 		</div>
 	);
 };
