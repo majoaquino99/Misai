@@ -114,21 +114,23 @@ According the low quality prototype and the proposal that the product owner and 
 <image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/codewithme.jpg" width="30%">
 
 <image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Mirey.jpg" width="30%">
-:pushpin: [Mirey Morales](https://github.com/Mirey91)
+:pushpin: [Mirey Morales](https://github.com/Mirey91 'Repository of Mirey')
 
 <image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Majo.jpg" width="30%">
-:pushpin: [María José Aquino](https://github.com/majoaquino99)
+:pushpin: [María José Aquino](https://www.github.com/majoaquino99 'Repository of Majo')
 
 <image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Itza.jpg" width="30%">
-:pushpin: [Itza Carrillo](https://github.com/ItzaCarrillo)
+:pushpin: [Itza Carrillo](https://github.com/ItzaCarrillo 'Repository of Itza')
 
 <image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Monse.jpg" width="30%">
-:pushpin: [Monse Salas](https://github.com/MonseSalasVi)
-<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Brenda.jpg" width="30%">
+:pushpin: [Monse Salas](https://github.com/MonseSalasVi 'Repository of Monse')
 
-:pushpin: [Martha Navarro](https://Tita-Navarro.github.io)
+<image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Brenda.jpg" width="30%">
+:pushpin: [Brenda Sandoval](https://github.com/Sahory31 'Repository of Brenda')
+
 
 <image src="https://raw.githubusercontent.com/Tita-Navarro/Misai/developer/src/assets/images/Tita.jpg" width="30%">
 
+:pushpin: [Martha Navarro](https://Tita-Navarro.github.io 'Portfolio of Tita')
 
 ## 8. Acknowledgements
