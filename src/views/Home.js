@@ -18,16 +18,24 @@ function Home() {
 	const {categories, imageCategories, errorCategories} = useCategories(1);
 	const {products, imageProductos, errorProducts} = useProducts(3);
 	const {product, errorProduct} = useProductById(1);
-	const {promotions, imagePromotions, errorPromotion} = usePromotions(4);
+	const {promotions, imagePromotions, errorPromotion} = usePromotions();
 	//const {imageCategories, errorImage} = useImageCategories();
 
+	/* for(let i=0; promotions.length; i++){
+		const { imagePromotions } = usePromotions(i);
+		console.log(imagePromotions);
+	}
+ */
+
+
 	//console.log(product)
-	console.log(categories);
+	//console.log(categories);
 	//console.log(products);
 	//console.log(promotions);
-	console.log(imagePromotions)
+	//console.log(imagePromotions)
 
 	let categoriesSection = (<h1>Loading</h1>);
+
 	if (categories.length > 0) {
 		categoriesSection = categories.map((category) => {
 			return (

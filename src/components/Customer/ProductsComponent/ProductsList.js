@@ -45,7 +45,7 @@ const ProductsList = ({productsList, handleDetailedProduct}) => {
           alt="img"
           height="300"
           width="50"
-          image={data.picture}
+          image={ `https://genericapiv1.azurewebsites.net/v1/shop/products/${data.productId}/image`}
           title="img"
         />
         <CardContent>
@@ -73,4 +73,3 @@ const ProductsList = ({productsList, handleDetailedProduct}) => {
 };
 
 export default ProductsList;
-
