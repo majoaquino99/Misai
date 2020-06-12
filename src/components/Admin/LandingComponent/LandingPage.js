@@ -25,7 +25,7 @@ const LandingPage = () => {
 	return(
 		<>
 			<HeaderAdmin/>
-			<div style={{margin: "140px"}}>
+			<div style={{margin: "40px"}}>
 				{view === 0
 				?
 				(
