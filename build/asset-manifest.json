@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f1a37860.chunk.css",
+    "main.js": "/static/js/main.6f68be5a.chunk.js",
+    "main.js.map": "/static/js/main.6f68be5a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3273aae9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3273aae9.js.map",
+    "static/css/2.afd40c00.chunk.css": "/static/css/2.afd40c00.chunk.css",
+    "static/js/2.c0db2ea1.chunk.js": "/static/js/2.c0db2ea1.chunk.js",
+    "static/js/2.c0db2ea1.chunk.js.map": "/static/js/2.c0db2ea1.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.5fd696967dbd198e286386a01e1cc417.js": "/precache-manifest.5fd696967dbd198e286386a01e1cc417.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.afd40c00.chunk.css.map": "/static/css/2.afd40c00.chunk.css.map",
+    "static/css/main.f1a37860.chunk.css.map": "/static/css/main.f1a37860.chunk.css.map",
+    "static/js/2.c0db2ea1.chunk.js.LICENSE.txt": "/static/js/2.c0db2ea1.chunk.js.LICENSE.txt",
+    "static/media/Logo-Misai.svg": "/static/media/Logo-Misai.3d55adf1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3273aae9.js",
+    "static/css/2.afd40c00.chunk.css",
+    "static/js/2.c0db2ea1.chunk.js",
+    "static/css/main.f1a37860.chunk.css",
+    "static/js/main.6f68be5a.chunk.js"
+  ]
+}

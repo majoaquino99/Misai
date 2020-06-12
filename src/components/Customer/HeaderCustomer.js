@@ -8,7 +8,6 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
-import LabelIcon from '@material-ui/icons/Label';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -96,7 +95,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-const HeaderCustomer = ({mockCategories, handleShowProducts}) => {
+const HeaderCustomer = ({categoriesSection, handleShowProducts, handleLoginView}) => {
 	const classes = useStyles();
 
 	return (
@@ -119,15 +118,14 @@ const HeaderCustomer = ({mockCategories, handleShowProducts}) => {
           </div>
 					<div>
 						<Button> <ShoppingCartIcon style={{ fontSize: 30 }} /> </Button>
-						<Button  className={classes.button}>Admin </Button>
+						<Button
+						className={classes.button}
+						onClick={handleLoginView}>Admin </Button>
 					</div>
 				</Toolbar>
 				<Toolbar className={classes.links}>
-					<Button className={classes.button2} >
-						<LabelIcon/> All discount
-					</Button>
                     <form>
-					{mockCategories.map(category => (
+					{categoriesSection.map(category => (
 						<Button
 						 className={classes.button}
 						 key={category.description}

@@ -10,9 +10,11 @@ import Select from '@material-ui/core/Select';
 import Button from '@material-ui/core/Button';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import FacebookIcon from '@material-ui/icons/Facebook';
-import PinterestIcon from '@material-ui/icons/Pinterest';
-import {  FacebookShareButton, PinterestShareButton, } from "react-share";
+import WhatsappIcon from '@material-ui/icons/WhatsApp';
+import {  FacebookShareButton, WhatsappShareButton  } from "react-share";
+
 const useStyles = makeStyles((theme) => ({
+
 	Container: {
 		display: 'flex',
     flexDirection: 'row',
@@ -75,10 +77,13 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-const DetailedProduct = ({productById, goBack}) => {
+const DetailedProduct = ({productById}) => {
+
+  const shareUrl = 'https://black-beach-0d0cbbf10.azurestaticapps.net/';
+  const message = 'Hey! Look what I found at Misai Fashion';
   const classes = useStyles();
 
-  //State selector
+  	//State selector
     const [state, setState] = React.useState({
       cant: '',
       total: 'hai',
@@ -95,53 +100,65 @@ const DetailedProduct = ({productById, goBack}) => {
     };
 
     return(
-        <React.Fragment>
-        <button onClick={goBack}> Back </button>
-        <CssBaseline />
-        <Container className={classes.Container} maxWidth="sm" >
-        <div className={classes.divImg}>
-        <img src={productById.picture} alt='Logo Misai' width={250}/>
-        <div>
-        <Typography  variant="subtitle1" > Share with :</Typography>
-        <Button > <FacebookIcon style={{ fontSize: 30 }} /> </Button>
-        <Button > <PinterestIcon style={{ fontSize: 30 }} /> </Button>
-        </div>
-        </div>
-        <div className={classes.divDetails}>
-        <Typography className={classes.text} variant="h5" > {productById.description} </Typography>
-        <Typography className={classes.text} variant="subtitle1" > Color: {productById.colors} </Typography>
-        <Typography className={classes.text} variant="subtitle1" > Sizes: {productById.sizes} </Typography>
-        <Typography className={classes.text} variant="subtitle1" > Price: ${productById.price} USD</Typography>
+		<React.Fragment>
+		<CssBaseline />
+			<Container className={classes.Container} maxWidth="sm" >
+				<div className={classes.divImg}>
+					<img src={ `https://genericapiv1.azurewebsites.net/v1/shop/products/${productById.productId}/image`}
+					alt='Logo Misai' width={250}/>
+					<div>
+						<Typography  variant="subtitle1" > Share with :</Typography>
+            <FacebookShareButton
+            url={shareUrl}
+            quote={message}
+            className="shareButtonMisai">
+            <FacebookIcon style={{ fontSize: 30 }} round />
+          </FacebookShareButton>
+          <WhatsappShareButton
+            url={shareUrl}
+            quote={message}
+            className="shareButtonMisai">
+            <WhatsappIcon style={{ fontSize: 30 }} round />
+          </WhatsappShareButton>
+					</div>
+				</div>
+				<div className={classes.divDetails}>
+					<Typography className={classes.text} variant="h5" > {productById.description} </Typography>
+					<Typography className={classes.text} variant="subtitle1" > Color: {productById.colors} </Typography>
+					<Typography className={classes.text} variant="subtitle1" > Sizes: {productById.sizes} </Typography>
+					<Typography className={classes.text} variant="subtitle1" > Price: ${productById.price} USD</Typography>
 
-        <FormControl variant="outlined" className={classes.formControl}>
-        <InputLabel className={classes.select} htmlFor="outlined-cant-native-simple">Cant</InputLabel>
-        <Select
-          className={classes.select}
-          native
-          value={state.cant}
-          onChange={handleChange}
-          label="Cant"
-          inputProps={{
-            name: 'cant',
-            id: 'outlined-cant-native-simple',
-          }}
-        >
-          <option aria-label="None" value="" />
-          <option value={1}>1</option>
-          <option value={2}>2</option>
-          <option value={3}>3</option>
-        </Select>
+					<FormControl variant="outlined" className={classes.formControl}>
+						<InputLabel className={classes.select} htmlFor="outlined-cant-native-simple">Cant</InputLabel>
+						<Select
+							className={classes.select}
+							native
+							value={state.cant}
+							onChange={handleChange}
+							label="Quantity"
+							inputProps={{
+							name: 'cant',
+							id: 'outlined-cant-native-simple',
+							}}
+							>
+							<option aria-label="None" value="" />
+							<option value={1}>1</option>
+							<option value={2}>2</option>
+							<option value={3}>3</option>
 
-        <Button className={classes.btn} >
-         <ShoppingCartIcon style={{ fontSize: 20 }} /> Add cart
-        </Button>
-      </FormControl>
+						</Select>
 
-        </div>
-       </Container>
-      </React.Fragment>
+						<Button className={classes.btn} >
+							<ShoppingCartIcon style={{ fontSize: 20 }} /> Add cart
+						</Button>
+					</FormControl>
+				</div>
+			</Container>
+		</React.Fragment>
     )
 
 };
 
 export default DetailedProduct;
+
+
